@@ -16,7 +16,7 @@ where id IN (
   );
 ```
 Output:
-<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q1.png" width="300" height="300">
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q1.png" width="500" height="300">
  
 
 ### Q2: Choose all employees who have never received an award (Nested Query)?
