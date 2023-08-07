@@ -16,7 +16,7 @@ where id IN (
   );
 ```
 Output:
-<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q1.png" width="500" height="300">
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q1.png" width="700" height="300">
  
 
 ### Q2: Choose all employees who have never received an award (Nested Query)?
@@ -37,11 +37,11 @@ FROM employee
 where Not EXISTS (
   SELECT employee_id
   FROM awards
-  WHERE employee.id = awards.employee_id
+  WHERE awards.employee_id = employee.id
   );
 ```
 Output:
-![img](C:\Users\mc872\Desktop\sql\SQL-Lab2-Pictures\Latest\Q2)
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q2.png" width="700" height="300">
  
 ### Q3: Choose all Developers who make more than all Managers combined (Nested Query)?
 Query: 
@@ -54,7 +54,8 @@ where role = "Developer" and salary > (
   WHERE role = "Manager"
   );
 ```
-![img](C:\Users\mc872\Desktop\sql\SQL-Lab2-Pictures\Latest\Q3_1)
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q3_1.png" width="700" height="300">
+
 `Another solution`
 
 ```sql
@@ -67,7 +68,8 @@ where role = "Developer" and salary > (
   );
 ```
 Output:
-![img](C:\Users\mc872\Desktop\sql\SQL-Lab2-Pictures\Latest\Q3_2)
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q3_2.png" width="700" height="300">
+
 
  
 ### Q4: Choose all Developers who make more money than any Manager (Nested Query)?
@@ -82,7 +84,7 @@ where role = "Developer" and salary > (
   );
 ```
 Output:
-![img](C:\Users\mc872\Desktop\sql\SQL-Lab2-Pictures\Latest\Q4)
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q4.png" width="700" height="300">
  
 ### Q5: Choose all employees whose salaries are higher than the average for their position. (Nested Query)?
 Query: 
@@ -95,4 +97,4 @@ where salary > (
   );
 ```
 Output:
-![img](C:\Users\mc872\Desktop\sql\SQL-Lab2-Pictures\Latest\Q5)
+<img src="https://github.com/RakanMohammedM/SQL-Lab2/blob/main/Q5.png" width="700" height="300">
